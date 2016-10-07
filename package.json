@@ -1,0 +1,26 @@
+{
+  "name": "bikey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/m0rphex/bikey.git"
+  },
+  "author": "morph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m0rphex/bikey/issues"
+  },
+  "homepage": "https://github.com/m0rphex/bikey#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^4.0.0-alpha.4",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.6.0"
+  }
+}
