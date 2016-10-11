@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>Bikey.Me {{title}}</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js" async></script>
@@ -16,13 +16,15 @@
             <a class="navbar-brand" href="home">Bikey.Me</a>
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link active" href="home">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Buy bike</a>
-                <a class="nav-item nav-link" href="bike">Sell bike</a>
+                <a class="nav-item nav-link" href="find_bike">Find bike</a>
+                <a class="nav-item nav-link" href="create_bike">Sell bike</a>
                 <a class="nav-item nav-link" href="#">About</a>
             </div>
         </div>
     </nav>
     </navbar>
+    <div class="container">
     {{{ body }}}
+    </div>
 </body>
 </html>

@@ -2,7 +2,6 @@ var express = require('express');
 var app = express();
 var routes = require('./routes');
 var bodyParser = require('body-parser');
-var bikes = require('./bike');
 var hbs = require('express-handlebars');
 
 //handlebars view engine setup

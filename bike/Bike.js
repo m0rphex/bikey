@@ -1,4 +1,7 @@
+var express = require('express');
+var router = express.Router();
 var mongoose = require('mongoose');
+
 var BikeSchema = new mongoose.Schema({
   manufacturer: String,
   model: String,
@@ -20,4 +23,5 @@ var BikeSchema = new mongoose.Schema({
   sold: Boolean,
   updated_at: { type: Date, default: Date.now }
 });
+
 module.exports = mongoose.model('Bike', BikeSchema);

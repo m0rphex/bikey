@@ -1,0 +1,15 @@
+<script>
+$.get( "bike", function( bikes ) {
+  $.each(bikes, function(i, bike) {
+    $("#bikeData").append("<div class='card'>" +
+            "<h3 class='card-header'>" + bike.manufacturer + "</h3>" +
+        "</div>")
+})
+});
+</script>
+    <div id='bikeData'>
+    </div>
+
+
+
+
