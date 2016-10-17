@@ -1,70 +1,70 @@
-<div class="card">
-            <h4 class="card-header">Describe bike</h4>
-            <div class="card-block">
-                <!--When we add new pictures we append them to the deck-->
-                <div class="card card-outline-warning">
-                    <!--Here we can have toggle hidden for the block after pictures have been added-->
-                    <div class="card-block">
-                        <div class="card-deck-wrapper">
-                            <div class="card-deck">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="http://dummyimage.com/660x500.png/dddddd/000000" alt="Card image cap">Remove
-                                </div>
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="http://dummyimage.com/660x500.png/dddddd/000000" alt="Card image cap">Remove
-                                </div>
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="http://dummyimage.com/660x500.png/dddddd/000000" alt="Card image cap">Remove
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-block">
-                        <button type="button" class="btn btn-primary">Add image</button>
-                    </div>
-                </div>
-            </div>
-            <form>
-                <div class="card-block">
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label for="manufacturer">Manufacturer</label>
-                            <input type="text" class="form-control" id="manufacturer" placeholder="Manufacturer" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="model">Model</label>
-                            <input type="text" class="form-control" id="model" placeholder="Model">
-                        </div>
-                        <div class="form-group">
-                            <label for="type">Type</label>
-                            <select id="type" class="form-control">
+<div class="card card-outline-primary">
+	<h4 class="card-header">Create bike listing</h4>
+	<div class="card-block">
+		<!--When we add new pictures we append them to the deck-->
+		<div class="card card-outline-warning">
+			<!--Here we can have toggle hidden for the block after pictures have been added-->
+			<div class="card-block">
+				<div class="card-deck-wrapper">
+					<div class="card-deck">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="http://dummyimage.com/660x500.png/dddddd/000000" alt="Card image cap">Remove
+						</div>
+						<div class="card">
+							<img class="card-img-top img-fluid" src="http://dummyimage.com/660x500.png/dddddd/000000" alt="Card image cap">Remove
+						</div>
+						<div class="card">
+							<img class="card-img-top img-fluid" src="http://dummyimage.com/660x500.png/dddddd/000000" alt="Card image cap">Remove
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-block">
+				<button type="button" class="btn btn-primary">Add image</button>
+			</div>
+		</div>
+	</div>
+	<form>
+		<div class="card-block">
+			<div class="form-inline">
+				<div class="form-group">
+					<label for="manufacturer">Manufacturer</label>
+					<input type="text" class="form-control" id="manufacturer" placeholder="Manufacturer" required>
+				</div>
+				<div class="form-group">
+					<label for="model">Model</label>
+					<input type="text" class="form-control" id="model" placeholder="Model">
+				</div>
+				<div class="form-group">
+					<label for="type">Type</label>
+					<select id="type" class="form-control">
                             <option>Men</option>
                             <option>Women</option>
                             <option>Children</option>
                             <option>Other</option>
                             </select>
-                        </div>
-                        <!--Replace this with class profile pictures-->
-                        <div class="form-group">
-                            <label for="class">Class</label>
-                            <select id="class" class="form-control">
+				</div>
+				<!--Replace this with class profile pictures-->
+				<div class="form-group">
+					<label for="class">Class</label>
+					<select id="class" class="form-control">
                             <option>Mountain</option>
                             <option>Hybrid</option>
                             <option>Racing</option>
-                            <option>Tuoring</option>
+                            <option>Touring</option>
                             <option>Fatbike</option>
                             <option>Fixie</option>
                             <option>Electric</option>
                             <option>Other</option>
                             </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-block">
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label for="wheel">Wheel size</label>
-                            <select id="wheel" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="card-block">
+			<div class="form-inline">
+				<div class="form-group">
+					<label for="wheel">Wheel size</label>
+					<select id="wheel" class="form-control">
                             <option>smaller</option>
                             <option>20"</option>
                             <option>24"</option>
@@ -75,46 +75,45 @@
                             <option>700C</option>
                             <option>other</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="tube_height">Seat tube height</label>
-                            <input type="number" class="form-control" id="tube_height" placeholder="Seat tube height">
-                        </div>
-                        <div class="form-group">
-                            <label for="gears">Gears</label>
-                            <input type="number" class="form-control" id="gears" placeholder="Number of gears">
-                        </div>
-                    </div>
-                </div>
-                <div class="card-block">
-                    <div class="form-group">
-                        <label for="description">Description</label>
-                        <textarea class="form-control" id="description" rows="3" placeholder="Describe the bike. In what condition is it?" required></textarea>
-                    </div>
-                </div>
-                <div class="card-block">
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label for="city">Country</label>
-                            <input type="text" class="form-control" id="country" placeholder="Country" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="city">City</label>
-                            <input type="text" class="form-control" id="city" placeholder="Nearest city" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="postcode">Postcode</label>
-                            <input type="text" class="form-control" id="postcode" placeholder="Postcode" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="price">Price</label>
-                            <input type="number" class="form-control" id="price" placeholder="Price">
-                        </div>
-                    </div>
-                </div>
-                <div class="card-block">
-                    <button type="button" class="btn btn-primary">Post bike notice</button>
-                </div>
-            </form>
-        </div>
+				</div>
+				<div class="form-group">
+					<label for="tube_height">Seat tube height (mm)</label>
+					<input type="number" min="0" class="form-control" id="tube_height" placeholder="Height in mm">
+				</div>
+				<div class="form-group">
+					<label for="gears">Gears</label>
+					<input type="number" min="0" class="form-control" id="gears" placeholder="Gear number">
+				</div>
+			</div>
+		</div>
+		<div class="card-block">
+			<div class="form-group">
+				<label for="description">Description</label>
+				<textarea class="form-control" id="description" rows="3" placeholder="Describe the bike. In what condition is it?" required></textarea>
+			</div>
+		</div>
+		<div class="card-block">
+			<div class="form-inline">
+				<div class="form-group">
+					<label for="city">Country</label>
+					<input type="text" class="form-control" id="country" placeholder="Country" required>
+				</div>
+				<div class="form-group">
+					<label for="city">City</label>
+					<input type="text" class="form-control" id="city" placeholder="Nearest city" required>
+				</div>
+				<div class="form-group">
+					<label for="postcode">Postcode</label>
+					<input type="text" class="form-control" id="postcode" placeholder="Postcode" required>
+				</div>
+				<div class="form-group">
+					<label for="price">Price</label>
+					<input type="number" min="0" class="form-control" id="price" placeholder="Price" required>
+				</div>
+			</div>
+		</div>
+		<div class="card-block">
+			<button type="button" class="btn btn-primary">Post bike notice</button>
+		</div>
+	</form>
 </div>

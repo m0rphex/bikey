@@ -16,6 +16,14 @@ router.get('/home', function (req, res) {
   res.render('../home');
 });
 
+router.get('/login', function (req, res) {
+  res.render('../login');
+});
+
+router.get('/register', function (req, res) {
+  res.render('../register');
+});
+
 router.get('/find_bike', function (req, res) {
   res.render('../find_bike');
 });

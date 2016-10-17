@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
+var timestamps = require('mongoose-timestamp');
 
 var BikeSchema = new mongoose.Schema({
   manufacturer: String,
@@ -20,8 +21,7 @@ var BikeSchema = new mongoose.Schema({
   top_tube_length: Number,
   seat_tube_length: Number,
   tube_height: Number,
-  sold: Boolean,
-  updated_at: { type: Date, default: Date.now }
+  sold: Boolean
 });
-
+BikeSchema.plugin(timestamps);
 module.exports = mongoose.model('Bike', BikeSchema);

@@ -5,7 +5,7 @@ var Bike = require('./Bike');
 
 
 /* GET /bikes listing. */
-router.get('/', function (req, res, next) {
+router.get('/all', function (req, res, next) {
   Bike.find(function (err, bikes) {
     if (err) return next(err);
     res.json(bikes);

@@ -1,30 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Bikey.Me {{title}}</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="jquery/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js" async></script>
+	<meta charset="UTF-8">
+	<title>Bikey.Me {{title}}</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="jquery/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js" async></script>
 </head>
+
 <body>
-    <navbar>
-    <nav class="navbar navbar-dark bg-primary" style="background-color: #e3f2fd; margin-bottom: 30px;">
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
-            aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
-        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-            <a class="navbar-brand" href="home">Bikey.Me</a>
-            <div class="nav navbar-nav">
-                <a class="nav-item nav-link active" href="home">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="find_bike">Find bike</a>
-                <a class="nav-item nav-link" href="create_bike">Sell bike</a>
-                <a class="nav-item nav-link" href="#">About</a>
-            </div>
-        </div>
-    </nav>
-    </navbar>
-    <div class="container">
-    {{{ body }}}
-    </div>
+	<navbar>
+		<nav class="navbar navbar-dark bg-primary" style="background-color: #e3f2fd; margin-bottom: 30px;">
+			<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
+				aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+			<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+				<a class="navbar-brand" href="home">Bikey.Me</a>
+				<div class="nav navbar-nav">
+					<a class="nav-item nav-link" href="find_bike">Find bike</a>
+					<a class="nav-item nav-link" href="create_bike">Sell bike</a>
+					<a class="nav-item nav-link" href="login">Login</a>
+					<a class="nav-item nav-link" href="register">Register</a>
+					<a class="nav-item nav-link" href="#">Advertise</a>
+					<a class="nav-item nav-link" href="#">About</a>
+				</div>
+			</div>
+		</nav>
+	</navbar>
+		<div class="row">
+			<div class="col-sm-2">
+				One of three columns
+			</div>
+			<div class="col-sm-8">
+				{{{ body }}}
+			</div>
+			<div class="col-sm-2">
+				One of three columns
+			</div>
+		</div>
 </body>
+
 </html>

@@ -1,15 +1,43 @@
+<div class="card card-outline-primary">
+<h4 class="card-header">Find your bike</h4>
+            <div class="card-block">
 <script>
-$.get( "bike", function( bikes ) {
-  $.each(bikes, function(i, bike) {
-    $("#bikeData").append("<div class='card'>" +
-            "<h3 class='card-header'>" + bike.manufacturer + "</h3>" +
-        "</div>")
-})
+$.get("bike/all", function (bikes){ 
+  var deck_cards = 4;
+  var card_count = deck_cards;
+  var deck_id = 0;
+  var card_amount = bikes.length - 1;
+
+  $.each(bikes, function (i, bike) {
+    
+    if (card_count >= deck_cards) {
+      card_count = 0;
+      deck_id++;
+      $("#bikeData").append("<div class='card-deck-wrapper'>" +
+        "<div class='card-deck' id='deck" + deck_id + "'></div></div>" 
+        )
+    }
+    
+    $("#deck" + deck_id).append("<div class='card' id =" + bike._id + ">" +
+      "<img class='card-img-top img-fluid' src='"+ bike.header_image_id +"' alt='Card image cap'>" +
+      "<div class='card-block'>" +
+      "<h5 class='card-title'>" + bike.manufacturer + "</h5>" +
+      "<span class='tag tag-primary'>"+ bike.price + " €</span>" +
+      "<p class='card-text'></p>" + bike.description +
+      //"<p class='card-text'><small class='text-muted'>updated on: "+ bike.updatedAt +"</small></p>" +
+      "</div></div>")
+
+      card_count++;
+  })
+  
+  while(card_count < deck_cards){
+     $("#deck" + deck_id).append("<div class='card hidden'></div>")
+     card_count++;
+  }
+
 });
 </script>
-    <div id='bikeData'>
-    </div>
-
-
-
-
+<div id='bikeData'>
+</div>
+</div>
+</div>
